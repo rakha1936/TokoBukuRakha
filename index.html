@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Toko Buku Online</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Toko Buku Rakha</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#produk">Produk</a>
+        <a href="#form">Pembelian</a>
+    </nav>
+</header>
+
+<main>
+
+    <!-- PRODUK -->
+    <section id="produk">
+        <h2>Daftar Buku</h2>
+        <div id="product-list" class="product-container"></div>
+    </section>
+
+    <!-- FORM -->
+    <section id="form">
+        <h2>Form Pembelian</h2>
+        <form id="formBeli">
+
+            <input type="text" id="nama" placeholder="Nama" required>
+            <small class="error"></small>
+
+            <input type="email" id="email" placeholder="Email" required>
+            <small class="error"></small>
+
+            <input type="number" id="hp" placeholder="No HP" required>
+            <small class="error"></small>
+
+            <select id="buku">
+                <option value="">Pilih Buku</option>
+                <option>Bumi Manusia</option>
+                <option>Negeri 5 Menara</option>
+                <option>Pulang</option>
+                <option>Dilan 1990</option>
+            </select>
+            <small class="error"></small>
+
+            <label>
+                <input type="radio" name="bayar" value="COD"> COD
+            </label>
+            <label>
+                <input type="radio" name="bayar" value="Transfer"> Transfer
+            </label>
+            <small class="error"></small>
+
+            <button type="submit">Beli</button>
+        </form>
+    </section>
+
+</main>
+
+<footer>
+    <p>© 2026 Toko Buku</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
